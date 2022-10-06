@@ -1,0 +1,111 @@
+html{
+    width: 100%;
+    margin: 1.5vw 0;
+}
+body{
+    
+    background-color: rgb(250, 247, 243);
+}
+
+
+//logo
+
+.logo img{
+
+    max-width:5rem;
+    height:auto;
+
+}
+a.logo{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+//for nav bar
+ul{
+    padding: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+    li{
+        margin: auto;
+        list-style: none;
+        align-self: center;
+        
+       a{
+        font-family: monospace; 
+        font-style: italic;
+        white-space: nowrap;
+        color: black;
+        text-decoration: none;
+        padding: 1vw;
+        @media (max-width: 800px){
+            font-size:.5rem;
+        }
+        @media (min-width: 800px){
+           font-size: .7rem; 
+        }
+        
+        
+        
+       }
+       a:hover{
+        background-color: black;
+        color: white;
+       }
+    }
+}
+.bottom-nav{
+    
+    max-height: 1vh;
+    width: 100%;
+   
+   
+    padding-top: 2%;
+    padding-bottom: 0%;
+    
+   
+    
+}
+
+
+
+//flexxing
+
+.container{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-top: 2vw;
+
+}
+
+.content{
+
+    
+    
+    margin: 2%;
+    @media (min-width:700px){
+        width: 65vw;
+        height: auto;
+    }
+    @media (max-width:700px){
+        width:fit-content;
+        height: auto;
+    
+        
+    }
+    object-fit: contain;
+}
+
+img{
+    width: 100%;
+    object-fit: fill;
+}
